@@ -7,6 +7,26 @@ from utils.helpers import reset_chat, logout, handle_suggestion_click
 
 def render_chat_interface():
     render_sidebar()
+    st.markdown(
+        """
+        <style>
+        /* Align chat left, next to the sidebar */
+        .main .block-container {
+            max-width: 800px;
+            margin-left: 0px
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        @media (max-width: 1200px) {
+            .main .block-container {
+                margin-left: 0 !important;
+                max-width: 100vw !important;
+            }
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
    
     st.title("Helion Scheduling Concierge")
     st.caption("Advanced collaboration scheduling for fusion energy innovation")
@@ -39,8 +59,9 @@ def render_sidebar():
         """
         <style>
         section[data-testid="stSidebar"] {
-            min-width: 400px !important;
-            max-width: 400px !important;
+            max-width: 350px !important;
+            width: 350px !important;
+            min-width: unset !important;
         }
         </style>
         """,
