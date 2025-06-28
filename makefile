@@ -1,5 +1,4 @@
 install:
 	pip install -r requirements.txt
-
 run:
-	streamlit run app.py
+	streamlit run app.py --server.port 8502
