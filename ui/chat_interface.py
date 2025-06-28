@@ -133,7 +133,7 @@ def render_welcome_section():
     
     col1, col2 = st.columns(2)
     with col1:
-        st.button("🗓️ View my schedule for today", on_click=handle_suggestion_click, args=["Show me my upcoming meetings for today"], use_container_width=True)
+        st.button("🗓️ View my schedule for tomorrow", on_click=handle_suggestion_click, args=["Show me my upcoming meetings for tomorrow"], use_container_width=True)
         st.button("🤝 Find team availability", on_click=handle_suggestion_click, args=["Is there a 30 minute slot available with the engineering team next week?"], use_container_width=True)
     with col2:
         st.button("📅 Schedule a technical review", on_click=handle_suggestion_click, args=["Schedule a 45 minute technical review for tomorrow afternoon"], use_container_width=True)

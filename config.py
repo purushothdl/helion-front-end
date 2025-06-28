@@ -1,1 +1,1 @@
-API_BASE_URL = "https://booking-agent-proto.onrender.com" 
+API_BASE_URL = "https://booking-agent-proto.onrender.com/api" 
